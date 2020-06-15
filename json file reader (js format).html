@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Manvir Singh Json Reader</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+    <div class="mypanel"></div>
+    <script>
+    $.getJSON('API LINK', function(data) {
+        
+        var text = `Date: ${data.result}`
+        $(".mypanel").html(text);
+    });
+    </script>
+</body>
+</html>
